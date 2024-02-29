@@ -1,0 +1,154 @@
+.NavBar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  box-shadow: 10px 10px 10px #000; 
+  background-color: #333333cb;
+  
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around; /* Adjust alignment of items */
+  align-items: center; /* Vertically center items */
+  padding: 10px 0; /* Add padding for better spacing */
+}
+.Sidenavbar{
+  display: none;
+}
+.NavBar a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px; 
+}
+
+.NavBar a:hover {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7)); 
+}
+
+.NavBar img {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  margin-right: 10px; 
+}
+
+#logOutButton {
+  background-color: rgb(208, 56, 26);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+#logOutButton:hover {
+  background-color: rgb(170, 45, 21); /* Darken the color on hover */
+}
+
+@media only screen and (max-width:600px) {
+  .NavBar{
+    display: none;
+  }
+  .Sidenavbar {
+    background-color:#00000045;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 30%; 
+    z-index: 999; /* Higher z-index to ensure visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Added shadow for better visibility */
+    
+  }
+
+  .menu-bars {
+    margin-left: 1rem; /* Adjusted margin for better spacing */
+    font-size: 1.5rem; /* Reduced font size for better fit */
+    color: white; /* Changed color for better visibility */
+    cursor: pointer; /* Added cursor pointer for interaction */
+  }
+
+  .nav-menu {
+    background-color: #333334aa;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    top: -0.5rem;
+    position: fixed;
+    left: -100%;
+    transition: 350ms;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    list-style-type: none;
+
+  }
+
+  .nav-text {
+    padding: 8px 16px;
+    list-style: none;
+  }
+
+  .nav-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Added border bottom for separation */
+  }
+
+  .nav-text a:last-child {
+    border-bottom: none; /* Remove border bottom for the last link */
+  }
+
+
+  .nav-menu-items {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    
+  }
+
+  .navbar-toggle {
+    margin-left: 10%;
+    width: 1px;
+    height: 25px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  span {
+    margin-left: 16px;
+  }
+  .Sidenavbar img {
+    width: 30%; 
+    height: 15%; 
+    border-radius: 25px; 
+    margin-right: 10px; 
+  }
+  
+  .sideBarButtons {
+    background-color: #b4b4b88f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px; 
+  }
+ 
+}

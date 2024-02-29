@@ -1,0 +1,15 @@
+.playlistShowGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playlistShowGrid h2 {
+  border-bottom: 5px solid rgb(59, 59, 59);
+  width: 100%;
+  text-align: center; 
+  padding: 0.5em 0; 
+}
+  #userDetails {
+    box-shadow: 10px 10px 10px #000; /* horizontal offset, vertical offset, blur radius, color */
+  }

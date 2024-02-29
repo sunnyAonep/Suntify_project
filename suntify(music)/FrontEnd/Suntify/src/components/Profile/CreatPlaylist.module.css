@@ -1,0 +1,7 @@
+.CreatPlaylist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}

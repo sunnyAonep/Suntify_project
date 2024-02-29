@@ -1,0 +1,129 @@
+.playlistContainer {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  margin-bottom: 20px;
+  transition: all ease-in-out 1s;
+
+}
+.playlists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.playlistContainer img {
+  width: 15rem;
+  height: auto;
+  border-radius: 5px; 
+  ;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  transition: all ease-in-out 1s;
+
+}
+
+.playlistContainer:hover .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all ease-in-out 1s;
+
+}
+
+.overlay h3 {
+  margin: 0;
+}
+
+.overlay p {
+  margin: 5px 0;
+}
+
+.overlay button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+.buttonsProfile button:hover {
+  background-color: #555;
+}
+@media only screen and (max-width: 600px) {
+  .playlistContainer {
+    position: relative;
+    width: 100%; /* Adjusted for responsiveness */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 20px;
+    transition: all ease-in-out 1s;
+  }
+  
+  .playlists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted for responsiveness */
+    grid-gap: 10px; /* Simplified */
+  }
+  
+  .playlistContainer img {
+    width: 100%; /* Adjusted image width */
+    max-width: 200px; /* Limit image size */
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    transition: all ease-in-out 1s;
+  }
+  
+  .playlistContainer:hover .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all ease-in-out 1s;
+  }
+  
+  .overlay h3 {
+    margin: 0;
+  }
+  
+  .overlay p {
+    margin: 5px 0;
+  }
+  
+  .overlay button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .buttonsProfile button:hover {
+    background-color: #555;
+  }
+}

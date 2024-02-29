@@ -1,0 +1,60 @@
+.selectContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .playlistSelect {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .playlistSelect:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .addButton {
+    padding: 8px 20px;
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .addButton:hover {
+    background-color: #c82333; /* Darker red color on hover */
+  }
+  
+  /* Optional: Add animation for button */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .addButton.animated:hover {
+    animation: pulse 0.5s infinite alternate; /* Apply animation on hover */
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .selectContainer {
+        width: 25%;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .playlistSelect {
+        width: 10px;
+    }
+}

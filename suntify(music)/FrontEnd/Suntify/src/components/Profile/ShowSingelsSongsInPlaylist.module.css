@@ -1,0 +1,106 @@
+.song_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .song_info:hover {
+    transition: all 1s ease-in-out;
+    background-color: #d2cdcd23;
+  }
+  
+  .song_cover_image {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 4px;
+    margin-right: 20px;
+  }
+  
+  .song_details {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .song_name {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .song-category {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #cc0000;
+  }
+  @media only screen and (max-width:600px) {
+    .song_info {
+        display: flex;
+        flex-direction: column; /* Adjusted for smaller screens */
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+    
+    .song_info:hover {
+        transition: all 0.5s ease-in-out; /* Reduced transition duration */
+        background-color: #58585823;
+    }
+    
+    .song_cover_image {
+        width: 100%; /* Adjusted width to fill container */
+        max-width: 100px; /* Limited max width for smaller screens */
+        height: auto; /* Ensured aspect ratio */
+        border-radius: 4px;
+        margin-bottom: 10px; /* Adjusted margin for better spacing */
+    }
+    
+    .song_details {
+        display: flex;
+        flex-direction: column; /* Adjusted for smaller screens */
+        width: 100%; /* Adjusted width to fill container */
+        align-items: center;
+    }
+    
+    .song_name {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+        margin-bottom: 3px; /* Adjusted margin for better spacing */
+    }
+    
+    .song-category {
+        color: #555;
+        font-size: 12px; /* Adjusted font size for smaller screens */
+        margin-bottom: 8px; /* Adjusted margin for better spacing */
+    }
+    
+    button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+    
+    button:hover {
+        background-color: #cc0000;
+    }
+    
+  }

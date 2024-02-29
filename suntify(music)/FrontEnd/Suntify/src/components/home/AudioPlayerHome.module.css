@@ -1,0 +1,82 @@
+.audio_player_container {
+    width: 50%; 
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .audio_player_container:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .song_info {
+    display: flex;
+    align-items: center;
+  }
+  .song_and_artist_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10%;
+  }
+  .song_cover_image {
+    width: 40%; 
+    height: 100%;
+    border-radius: 10%; 
+    margin-right: 20px;
+  }
+  
+  .song_info{
+    align-items: center;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-direction: column;
+  }
+  .user_info{
+    display: flex;
+  }
+  .user_name {
+    margin: 0; 
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .song_profile_image{
+    width: 40%; 
+    height: 80%;
+    border-radius: 50%; 
+    margin-right: 20px;
+  }
+  .song_name {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  .song_category {
+    margin: 0; 
+    font-size: 14px;
+    color: #666666; 
+  }
+
+  @media only screen and (max-width: 600px) {
+    .audio_player_container {
+        width: 100%; 
+    }
+
+    .song_and_artist_info {
+        gap: 5%; /* Reduce the gap between elements for better spacing */
+    }
+
+    .song_cover_image,
+    .song_profile_image {
+        width: 40%; /* Reduce the width of images for better fitting on smaller screens */
+    }
+
+    .user_info {
+      display: none;
+        flex-direction: column; /* Stack user info vertically */
+        align-items: center; /* Center align user info */
+    }
+}
